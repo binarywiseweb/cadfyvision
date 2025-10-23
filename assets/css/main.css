@@ -13293,3 +13293,15 @@ div.demo img {
 .tp-category-content.one:hover .tp-category-icon i {
     color: #ffffff;           /* turns white on hover */
 }
+/* Hide offcanvas (menu) icon on desktop, show only on mobile */
+/* Hide the menu icon (offcanvas trigger) on desktop */
+.offcanvas-open-btn {
+  display: none;
+}
+
+/* Show it only on mobile view */
+@media (max-width: 991px) {
+  .offcanvas-open-btn {
+    display: inline-block;
+  }
+}
