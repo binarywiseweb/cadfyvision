@@ -1601,6 +1601,21 @@ and future-ready digital applications.</p>
     },
   });
 </script>
+<script>
+  // Close offcanvas and search popup when clicking any link inside the offcanvas menu
+  document.querySelectorAll('.offcanvas__area a').forEach(link => {
+    link.addEventListener('click', () => {
+      // Close offcanvas
+      document.querySelector('.offcanvas__area').classList.remove('offcanvas-opened');
+      document.querySelector('.body-overlay').classList.remove('opened');
+
+      // Close search popup (if open)
+      document.querySelector('.search__popup').classList.remove('search-opened');
+      document.querySelector('.search-popup-overlay').classList.remove('opened');
+    });
+  });
+</script>
+
 
    </body>
 </html>

@@ -13299,7 +13299,7 @@ div.demo img {
   display: none;
 }
 
-/* Show it only on mobile view */
+/* Show it only on mobile view  menu icon*/ 
 @media (max-width: 991px) {
   .offcanvas-open-btn {
     display: inline-block;
