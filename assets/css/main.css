@@ -2621,13 +2621,7 @@ div.demo img {
 .tp-section-title__pre .title-pre-color {
   color: var(--tp-theme-secondary);
 }
-.tp-section-title__pre svg {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--tp-theme-secondary);
-}
+
 
 /*----------------------------------------*/
 /*  3.1 Header Style 1
@@ -13305,3 +13299,8 @@ div.demo img {
     display: inline-block;
   }
 }
+.tp-section-title__pre::before,
+.tp-section-title__pre::after {
+  display: none !important;
+}
+
