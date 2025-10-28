@@ -2618,9 +2618,12 @@ div.demo img {
   display: inline-block;
   margin-bottom: 22px;
 }
-.tp-section-title__pre .title-pre-color {
-  color: var(--tp-theme-secondary);
+.tp-category-content p {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
 }
+
 
 
 /*----------------------------------------*/
@@ -12568,6 +12571,10 @@ div.demo img {
 .tp-category-content:hover .tp-category-content-title {
   color: var(--tp-common-white);
 }
+.tp-category-content:hover p {
+  color: var(--tp-common-white);
+}
+
 @media (max-width: 575px) {
   .tp-category-content-wrapper {
     justify-content: center;
