@@ -1387,7 +1387,7 @@ and future-ready digital applications.</p>
       </div>
 
       <!-- Contact Form (Right) -->
-      <div class="col-md-6 col-lg-6">
+      <!--<div class="col-md-6 col-lg-6">
         <div class="tp-contact-form">
           <h3 class="tp-contact-form-title">Contact Us</h3>
           <p>
@@ -1404,11 +1404,14 @@ and future-ready digital applications.</p>
               <div class="col-md-6">
                 <div class="tp-contact-input">
                   <input name="email" type="email" placeholder="Email Address*" />
+
+
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="tp-contact-input">
-                  <input name="service" type="text" placeholder="Service Type" />
+                  <input name="service" type="text" placeholder="What challenge can we help solve" />
+
                 </div>
               </div>
               <div class="col-md-6">
@@ -1425,7 +1428,41 @@ and future-ready digital applications.</p>
                 <button type="submit" class="tp-btn">Send Message</button>
               </div>
             </div>
-          </form>
+          </form>-->
+          <div class="col-md-6 col-lg-6">
+  <div class="tp-contact-form">
+    <h3 class="tp-contact-form-title">Contact Us</h3>
+    <p>Your email address will not be published. Required fields are marked *</p>
+    <form id="contact-form" action="assets/mail.php" method="POST">
+      
+      <div class="tp-contact-input">
+        <input name="name" type="text" placeholder="Your Name*" />
+      </div>
+      
+      <div class="tp-contact-input">
+        <input name="email" type="email" placeholder="Email Address*" />
+      </div>
+      
+      <div class="tp-contact-input">
+        <input name="phone" type="text" placeholder="Phone Number" />
+      </div>
+      
+      <div class="tp-contact-input">
+        <input name="service" type="text" placeholder="What challenge can we help solve" />
+      </div>
+      
+      <div class="tp-contact-input">
+        <textarea name="message" placeholder="Enter Your Message Here" style="height:100px;"></textarea>
+      </div>
+      
+      <div class="tp-contact-btn mt-10">
+        <button type="submit" class="tp-btn">Send Message</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
           <p class="ajax-response"></p>
         </div>
       </div>
